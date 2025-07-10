@@ -1,0 +1,34 @@
+.location {
+  padding: 5rem 2rem 0; /* No bottom padding to let the map flush with the footer */
+  background-color: var(--background-color);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.mapContainer {
+  width: 100%;
+  height: 500px; /* Essential for the map to be visible */
+  margin-top: 3rem;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}

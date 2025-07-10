@@ -1,0 +1,58 @@
+/* CSS Reset and Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #aaaaaa;
+  --background-color: #1a1a1a;
+  --accent-color: #ff4d4d;
+  --surface-color: #2c2c2c;
+  --font-family-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.2;
+}

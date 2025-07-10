@@ -1,0 +1,34 @@
+.about {
+  padding: 5rem 2rem;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary-color);
+}
